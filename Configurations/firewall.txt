@@ -1,0 +1,3 @@
+Ouverture du port ssh 2222
+Autorisé le port 21
+OUverture HTTP 80 et HTTPS 443
