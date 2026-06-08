@@ -1,0 +1,18 @@
+! Configuration Switch Cisco
+hostname SW-Paris-01
+
+! Définition des VLANs
+vlan 10
+ name ADMIN
+vlan 20
+ name USERS
+
+! Interface de gestion
+interface vlan 10
+ ip address 192.168.10.2 255.255.255.0
+ no shutdown
+
+! Configuration d'un port d'accès
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 20

@@ -1,0 +1,15 @@
+! Configuration Pare-feu
+
+! Autoriser SSH pour le réseau admin
+! Permet l'administration distante sécurisée
+ALLOW TCP 22 FROM 192.168.10.0/24
+
+! Autoriser HTTP pour le trafic web non sécurisé
+ALLOW TCP 80 FROM ANY
+
+! Autoriser HTTPS pour le trafic web sécurisé
+ALLOW TCP 443 FROM ANY
+
+! Bloquer le reste
+! Politique de sécurité "Default Deny" pour fermer le flux
+DENY ALL
