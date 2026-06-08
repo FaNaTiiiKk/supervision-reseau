@@ -1,4 +1,5 @@
 Ouverture du port ssh 2222
 Autorisé le port 21
 Overture HTTP 80 et HTTPS 443
+Activation du pare-feu
 
