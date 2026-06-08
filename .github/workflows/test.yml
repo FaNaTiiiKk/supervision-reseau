@@ -1,0 +1,12 @@
+cat << 'EOF' > .github/workflows/validate.yml
+name: Validation Projet
+
+on: [push]
+
+jobs:
+  affichage-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher le message de validation
+        run: echo "validation du projet supervision-réseau"
+EOF
